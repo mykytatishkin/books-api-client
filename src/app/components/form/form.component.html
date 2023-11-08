@@ -1,1 +1,22 @@
-<p>form works!</p>
+<h4>Add new book</h4>
+<form #form1="ngForm" (ngSubmit)="addBook(form1.value)">
+    <div class="form-group">
+        <input type="hidden" name="id" value="0" ngModel/>
+    </div>
+    <div class="form-group">
+        <input type="text" name="title" placeholder="Title" class="form-control" ngModel/>
+    </div>
+    <div class="form-group">
+        <input type="text" name="author" placeholder="Author" class="form-control" ngModel/>
+    </div>
+    <div class="form-group">
+        <input type="number" name="price" min="0" placeholder="Price" class="form-control" ngModel/>
+    </div>
+    <div class="form-group">
+        <input type="file" name="imageUrl" class="form-control" (change)="selectFiles($event)"/>
+    </div>
+
+    <div class="form-group">
+        <input type="submit" value="Add Book" class="btn btn-warning btn-sm"/>
+    </div>
+</form>

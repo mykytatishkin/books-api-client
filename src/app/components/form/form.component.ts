@@ -7,4 +7,14 @@ import { Component } from '@angular/core';
 })
 export class FormComponent {
 
+  files: File[] = [];
+
+  addBook(book: any): void{
+    console.log(book);
+  }
+
+  selectFiles(event: any): void {
+    this.files = event.target.files;
+    console.log(this.files);
+  }
 }
