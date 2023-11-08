@@ -3,8 +3,8 @@ export class Picture {
     bookId: number;
     imageUrl: any;
     
-    constructor(id: number, bookId: number, imageUrl: any) {
-        this.id = id;
+    constructor(bookId: number, imageUrl: any) {
+        this.id = 0;
         this.bookId = bookId;
         this.imageUrl = imageUrl;
     }
