@@ -7,4 +7,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'books-api-client';
+  bookId: number = 0;
+
+  getBookId(event: number): void {
+    this.bookId = event;
+    console.log("BookId="+this.bookId);
+  }
 }

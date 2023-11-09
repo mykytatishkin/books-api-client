@@ -5,10 +5,10 @@
     </div>
     <div class="right col-md-8 col-lg-8, col-sm-6">
       <div class="top row">
-        <app-list></app-list>
+        <app-list (emitBookId)="getBookId($event)"></app-list>
       </div>
       <div class="bottom row">
-        <app-pictures></app-pictures>
+        <app-pictures [selectedBookId]="bookId" ></app-pictures>
       </div>
     </div>
   </div>

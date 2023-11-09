@@ -1,3 +1,5 @@
 <div class="pictures">
     <h3>pictures</h3>
+
+    <img *ngFor="let item of pictures" src="data:image/jpeg;base64,{{ item.imageUrl }}" alt="picture" height="150px">
 </div>

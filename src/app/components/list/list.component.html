@@ -1,3 +1,21 @@
 <div class="list">
     <h1>Book Library</h1>
+
+    <table class="table table-striped">
+        <thead>
+            <th>Id</th>
+            <th>Title</th>
+            <th>Author</th>
+            <th>Price</th>
+        </thead>
+        <tbody>
+            <tr *ngFor="let item of books">
+                <td>{{ item.id }}</td>
+                <td>{{ item.title }}</td>
+                <td>{{ item.author }}</td>
+                <td>{{ item.price }}</td>
+                <td><input type="button" class="btn btn-dark btn-sm" value="i" (click)="selectBook(item.id)"></td>
+            </tr>
+        </tbody>
+    </table>
 </div>
