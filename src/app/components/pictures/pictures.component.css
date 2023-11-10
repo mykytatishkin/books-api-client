@@ -1,5 +1,5 @@
 .pictures {
-    height: 20vh;
+    height: 18vh;
 }
 
 h3 {
@@ -7,4 +7,5 @@ h3 {
     font-family: 'Poppins', sans-serif;
     font-weight:  bold;
     color: white;
+    margin: 10px 10px 0px 0px;
 }
